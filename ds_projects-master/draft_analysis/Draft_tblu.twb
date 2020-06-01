@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='draft_final' inline='true' name='federated.1kq0xnw075kjjf17ybpnw1fjprwj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='draft_final' name='textscan.0orysob1g0e0bh1467f9o0to6dzk'>
+            <connection class='textscan' directory='/Users/hughkohl/Desktop/ds_projects/draft_analysis' filename='draft_final.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0orysob1g0e0bh1467f9o0to6dzk' name='draft_final.csv' table='[draft_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='player' ordinal='0' />
+            <column datatype='integer' name='sportingnews' ordinal='1' />
+            <column datatype='integer' name='CBS' ordinal='2' />
+            <column datatype='integer' name='si_rank' ordinal='3' />
+            <column datatype='integer' name='ds1_rank' ordinal='4' />
+            <column datatype='integer' name='ds2_rank' ordinal='5' />
+            <column datatype='integer' name='JacobK' ordinal='6' />
+            <column datatype='integer' name='JustinB' ordinal='7' />
+            <column datatype='integer' name='Saucey19' ordinal='8' />
+            <column datatype='integer' name='Logantooreal' ordinal='9' />
+            <column datatype='integer' name='rayt' ordinal='10' />
+            <column datatype='integer' name='username2003' ordinal='11' />
+            <column datatype='integer' name='Jackd1305' ordinal='12' />
+            <column datatype='integer' name='Kamikaze_Justice' ordinal='13' />
+            <column datatype='integer' name='reuter' ordinal='14' />
+            <column datatype='integer' name='bleacher' ordinal='15' />
+            <column datatype='integer' name='si2_rank' ordinal='16' />
+            <column datatype='integer' name='drafttek' ordinal='17' />
+            <column datatype='integer' name='draftgeek_x' ordinal='18' />
+            <column datatype='integer' name='pft' ordinal='19' />
+            <column datatype='integer' name='cbs_wilson' ordinal='20' />
+            <column datatype='integer' name='mean' ordinal='21' />
+            <column datatype='string' name='round' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sportingnews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sportingnews]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>sportingnews</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CBS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CBS]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>CBS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>si_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[si_rank]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>si_rank</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ds1_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ds1_rank]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>ds1_rank</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ds2_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ds2_rank]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>ds2_rank</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JacobK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JacobK]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>JacobK</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JustinB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JustinB]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>JustinB</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Saucey19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Saucey19]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>Saucey19</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Logantooreal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Logantooreal]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>Logantooreal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rayt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rayt]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>rayt</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username2003</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[username2003]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>username2003</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jackd1305</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Jackd1305]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>Jackd1305</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kamikaze_Justice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kamikaze_Justice]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>Kamikaze_Justice</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reuter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reuter]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>reuter</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bleacher</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bleacher]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>bleacher</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>si2_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[si2_rank]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>si2_rank</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drafttek</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[drafttek]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>drafttek</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>draftgeek_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[draftgeek_x]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>draftgeek_x</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pft</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pft]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>pft</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cbs_wilson</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cbs_wilson]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>cbs_wilson</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mean]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>mean</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[round]</local-name>
+            <parent-name>[draft_final.csv]</parent-name>
+            <remote-alias>round</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Jacob K' datatype='integer' name='[JacobK]' role='measure' type='quantitative' />
+      <column caption='Justin B' datatype='integer' name='[JustinB]' role='measure' type='quantitative' />
+      <column caption='Kamikaze Justice' datatype='integer' name='[Kamikaze_Justice]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Bleacher' datatype='integer' name='[bleacher]' role='measure' type='quantitative' />
+      <column caption='Cbs Wilson' datatype='integer' name='[cbs_wilson]' role='measure' type='quantitative' />
+      <column caption='Draftgeek X' datatype='integer' name='[draftgeek_x]' role='measure' type='quantitative' />
+      <column caption='Drafttek' datatype='integer' name='[drafttek]' role='measure' type='quantitative' />
+      <column caption='Ds1 Rank' datatype='integer' name='[ds1_rank]' role='measure' type='quantitative' />
+      <column caption='Ds2 Rank' datatype='integer' name='[ds2_rank]' role='measure' type='quantitative' />
+      <column caption='Mean' datatype='integer' name='[mean]' role='measure' type='quantitative' />
+      <column caption='Pft' datatype='integer' name='[pft]' role='measure' type='quantitative' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <column caption='Rayt' datatype='integer' name='[rayt]' role='measure' type='quantitative' />
+      <column caption='Reuter' datatype='integer' name='[reuter]' role='measure' type='quantitative' />
+      <column caption='Round' datatype='string' name='[round]' role='dimension' type='nominal' />
+      <column caption='Si2 Rank' datatype='integer' name='[si2_rank]' role='measure' type='quantitative' />
+      <column caption='Si Rank' datatype='integer' name='[si_rank]' role='measure' type='quantitative' />
+      <column caption='Sportingnews' datatype='integer' name='[sportingnews]' role='measure' type='quantitative' />
+      <column caption='Username2003' datatype='integer' name='[username2003]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.276414' measure-ordering='alphabetic' measure-percentage='0.723586' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0B3C7181-E5E3-41A7-986C-53FC2370CC25}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{635F8788-6BC1-4B37-BB83-962B2D285F96}' />
+    </window>
+  </windows>
+</workbook>
