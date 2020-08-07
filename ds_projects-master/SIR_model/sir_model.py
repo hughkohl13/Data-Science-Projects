@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 def plot_sir(time_grid, infectious, susceptible, recovered):
     fig = plt.figure(facecolor='w')
     ax = fig.add_subplot(111, facecolor='#dddddd', axisbelow=True)
-    ax.plot(time_grid, susceptible, 'b', alpha=0.5, lw=2, label='Susceptible')
-    ax.plot(time_grid, infectious, 'r', alpha=0.5, lw=2, label='Infectious')
+    ax.plot(time_grid, susceptible, 'b', alpha=0.5, lw=2, label='Infectious')
+    ax.plot(time_grid, infectious, 'r', alpha=0.5, lw=2, label='Susceptible')
     ax.plot(time_grid, recovered, 'g', alpha=0.5, lw=2, label='Recovered')
 
     ax.set_xlabel('Days')
@@ -64,10 +64,10 @@ def derivatives_helper(initial_conditions, time_grid, total_population, beta, me
 
 if __name__ ==  "__main__":
     '''set params'''
-    total_population = 100000
+    total_population = 330000000
     days = 200
-    initial_infected = 100
-    initial_recovered = 0
+    initial_infected = 2510000
+    initial_recovered = 770000
 
     # params to build beta (transmission rate)
     avg_num_contacts_per_person = 5 #per day
